@@ -120,8 +120,8 @@ swapfl([First1|Tail1], [First2|Tail2]):-
 %% constraints in Prolog. member and sublist might be useful predicates.
 
 %% Prolog calculates the following 2 answers:
-%% (blue, Japanese, zebra) | (red, English, snail) | (green, Spanish, jaguar)
-%% (green, Spanish, jaguar) | (blue, Japanese, zebra) | (red, English, snail)
+%% (green, Spanish, jaguar) | (red, English, snail) | (blue, Japanese, zebra)
+%% (red, English, snail) | (blue, Japanese, zebra) | (green, Spanish, jaguar)
 
 prefix(P,L) :- append(P,_,L).
 suffix(S,L) :- append(_,S,L).
