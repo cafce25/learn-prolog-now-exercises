@@ -119,8 +119,9 @@ swapfl([First1|Tail1], [First2|Tail2]):-
 %% Hint: Think of a representation for the houses and the street. Code the four
 %% constraints in Prolog. member and sublist might be useful predicates.
 
-%% I believe this is the correct answer:
-%% (green, Japanese, zebra) | (red, English, snail) | (blue, Spanish, jaguar)
+%% Prolog calculates the following 2 answers:
+%% (blue, Japanese, zebra) | (red, English, snail) | (green, Spanish, jaguar)
+%% (green, Spanish, jaguar) | (blue, Japanese, zebra) | (red, English, snail)
 
 prefix(P,L) :- append(P,_,L).
 suffix(S,L) :- append(_,S,L).
